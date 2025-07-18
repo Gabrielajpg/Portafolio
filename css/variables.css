@@ -1,0 +1,57 @@
+:root {
+    --color-background: #111;
+    --color-dark-gray: #1a1a1a;
+    --color-text: #f0eae0;
+    --color-primary: #ebe0c2;
+    --color-secondary: #9f0a10;
+    --color-accent: #430102;
+    --color-gothic-blue: #220c12;
+    --indicator-size: 12px;
+}
+
+/* Tipografía */
+h1, h2, h3 {
+    font-family: 'UnifrakturCook', cursive;
+    color: var(--color-primary);
+    text-shadow: 1px 1px #000;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 5px var(--color-accent);
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-secondary);
+}
+
+/* Clases utilitarias */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
