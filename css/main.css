@@ -5,7 +5,7 @@
 @import 'sections.css';
 @import 'components.css';
 
-/* Media queries - Responsive */
+/* Media Responsive */
 @media (max-width: 1024px) {
     .content {
         padding: 1.5rem;
@@ -97,7 +97,7 @@
     }
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 400px) { 
     .indicator {
         right: 0.5rem;
         padding: 0.5rem;
